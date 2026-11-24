@@ -1,0 +1,1120 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#F8F5EF">
+
+    <meta name="description" content="Viviana Rosa Esmalteria. Manicure, pedicure, esmaltação em gel e cuidados especiais em Jaú, São Paulo.">
+
+    <title>Viviana Rosa — Nail Studio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- BARRA DE PROGRESSO -->
+
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- CABEÇALHO -->
+
+    <header class="header" id="header">
+
+        <div class="header-inner">
+
+            <a href="#inicio" class="brand">
+                <span class="brand-name">viviana<span>rosa.</span></span>
+                <span class="brand-description">ESMALTERIA & CUIDADO</span>
+            </a>
+
+            <nav class="navigation" id="navigation">
+                <a href="#inicio" class="active">Início</a>
+                <a href="#sobre">O espaço</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#galeria">Inspirações</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <a href="#agendamento" class="header-button">
+                Agendar visita
+                <i data-lucide="arrow-up-right"></i>
+            </a>
+
+            <button class="menu-button" id="menuButton"
+                    aria-label="Abrir menu"
+                    aria-controls="navigation"
+                    aria-expanded="false">
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- PÁGINA INICIAL -->
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-content">
+
+                <div class="hero-topline">
+                    <span class="line"></span>
+                    <span>NAIL STUDIO — JAÚ, SP</span>
+                </div>
+
+                <h1>
+                    A beleza<br>
+                    mora nos<br>
+                    <em>detalhes.</em>
+                </h1>
+
+                <p class="hero-description">
+                    Um tempo para você. Um cuidado que transforma.
+                    Unhas feitas com delicadeza, personalidade
+                    e atenção a cada detalhe.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a href="#agendamento" class="button button-primary">
+                        Reserve seu momento
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                    <a href="#servicos" class="underlined-link">
+                        Explore os serviços
+                    </a>
+
+                </div>
+
+                <div class="hero-review">
+
+                    <div class="google-letter">G</div>
+
+                    <div>
+                        <div class="stars">★★★★★</div>
+                        <p>5,0 de 5 · 9 avaliações no Google</p>
+                    </div>
+
+                </div>
+
+                <span class="hero-index">01 / 05</span>
+
+            </div>
+
+            <!-- VITRINE INTERATIVA DO ESMALTE -->
+
+            <div class="hero-visual" id="heroVisual">
+
+                <div class="visual-top">
+                    <span>THE BEAUTY EDIT</span>
+                    <span>ESTÚDIO VR</span>
+                </div>
+
+                <span class="background-letter" aria-hidden="true">R</span>
+
+                <div class="product-stage" id="productStage">
+
+                    <div class="product-shadow"></div>
+
+                    <div class="product-perspective" id="productPerspective">
+
+                        <div class="polish-bottle" id="polishBottle">
+
+                            <div class="polish-top">
+
+                                <div class="polish-cap">
+                                    <div class="cap-reflection"></div>
+                                </div>
+
+                                <div class="brush-stick"></div>
+                                <div class="brush-tip"></div>
+
+                            </div>
+
+                            <div class="bottle-neck"></div>
+
+                            <div class="bottle-body">
+
+                                <div class="bottle-liquid"></div>
+                                <div class="glass-highlight"></div>
+                                <div class="glass-edge"></div>
+
+                                <div class="bottle-brand">
+                                    <span>vr.</span>
+                                    <small>VIVIANA ROSA</small>
+                                    <small>NAIL COLOUR</small>
+                                </div>
+
+                                <span class="bottle-volume">10 ml</span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="product-pedestal"></div>
+
+                </div>
+
+                <div class="visual-bottom">
+
+                    <div class="color-information">
+                        <span>EXPLORE OS TONS</span>
+                        <h3 id="colorName">Rouge Intenso</h3>
+
+                        <div class="color-palette">
+
+                            <button class="color-option selected"
+                                    style="--swatch:#702638"
+                                    data-color="#702638"
+                                    data-light="#B94E67"
+                                    data-dark="#39101E"
+                                    data-name="Rouge Intenso"
+                                    aria-label="Rouge Intenso"
+                                    aria-pressed="true">
+                            </button>
+
+                            <button class="color-option"
+                                    style="--swatch:#C88D9D"
+                                    data-color="#C88D9D"
+                                    data-light="#F2BCC8"
+                                    data-dark="#8D5365"
+                                    data-name="Rosé Clássico"
+                                    aria-label="Rosé Clássico"
+                                    aria-pressed="false">
+                            </button>
+
+                            <button class="color-option"
+                                    style="--swatch:#B48B78"
+                                    data-color="#B48B78"
+                                    data-light="#E6BFA9"
+                                    data-dark="#785344"
+                                    data-name="Nude Elegance"
+                                    aria-label="Nude Elegance"
+                                    aria-pressed="false">
+                            </button>
+
+                            <button class="color-option"
+                                    style="--swatch:#45323B"
+                                    data-color="#45323B"
+                                    data-light="#886675"
+                                    data-dark="#21151B"
+                                    data-name="Noir Chic"
+                                    aria-label="Noir Chic"
+                                    aria-pressed="false">
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <button class="product-button" id="productButton"
+                            aria-label="Abrir frasco de esmalte"
+                            aria-pressed="false">
+                        <i data-lucide="plus"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FAIXA EDITORIAL -->
+
+        <div class="editorial-strip">
+
+            <span>Manicure</span>
+            <span class="strip-dot"></span>
+
+            <span>Pedicure</span>
+            <span class="strip-dot"></span>
+
+            <span>Esmaltação em gel</span>
+            <span class="strip-dot"></span>
+
+            <span>Beleza natural</span>
+            <span class="strip-dot"></span>
+
+            <span>Cuidado pessoal</span>
+
+        </div>
+
+        <!-- SOBRE -->
+
+        <section class="about section-space container" id="sobre">
+
+            <div class="about-image reveal">
+
+                <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1200&q=85"
+                     alt="Fotografia ilustrativa de cuidados com as unhas"
+                     loading="lazy">
+
+                <span class="image-caption">
+                    THE ART OF SELF-CARE — INSPIRAÇÃO
+                </span>
+
+                <div class="image-stamp">
+                    <span>BELEZA</span>
+                    <strong>vr.</strong>
+                    <span>COM AMOR</span>
+                </div>
+
+            </div>
+
+            <div class="about-content reveal">
+
+                <span class="section-tag">
+                    01 — NOSSA ESSÊNCIA
+                </span>
+
+                <h2>
+                    Mais que unhas.<br>
+                    <em>Um momento<br>seu.</em>
+                </h2>
+
+                <p>
+                    Acreditamos que a beleza está nas pequenas coisas.
+                    No cuidado com os detalhes, na escolha de uma cor
+                    e na sensação de sair de um atendimento se sentindo
+                    ainda mais especial.
+                </p>
+
+                <p>
+                    Na Viviana Rosa Esmalteria, cada atendimento
+                    é uma oportunidade de oferecer carinho,
+                    atenção e dedicação.
+                </p>
+
+                <div class="signature">
+                    Viviana Rosa
+                </div>
+
+                <span class="signature-description">
+                    MANICURE PROFISSIONAL
+                </span>
+
+                <a href="#agendamento" class="underlined-link">
+                    Conheça nossa experiência
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+
+            </div>
+
+        </section>
+
+        <!-- SERVIÇOS -->
+
+        <section class="services section-space" id="servicos">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <div>
+                        <span class="section-tag">
+                            02 — MENU DE CUIDADOS
+                        </span>
+
+                        <h2>
+                            Seu ritual<br>
+                            <em>de beleza.</em>
+                        </h2>
+                    </div>
+
+                    <p>
+                        Escolha o cuidado que combina com você.
+                        Cada detalhe importa, do início à finalização.
+                    </p>
+
+                </div>
+
+                <div class="service-layout">
+
+                    <div class="service-photo reveal">
+
+                        <img id="serviceImage"
+                             src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1000&q=85"
+                             alt="Imagem ilustrativa do serviço selecionado"
+                             loading="lazy">
+
+                        <div class="service-photo-caption">
+                            <span>VIVIANA ROSA</span>
+                            <h3 id="servicePhotoTitle">Manicure</h3>
+                            <small>Imagem de inspiração</small>
+                        </div>
+
+                    </div>
+
+                    <div class="service-list reveal">
+
+                        <article class="service-item active"
+                                 data-service="Manicure">
+
+                            <button class="service-trigger"
+                                    aria-expanded="true">
+                                <span class="service-index">01</span>
+                                <span class="service-name">Manicure</span>
+                                <i data-lucide="plus"></i>
+                            </button>
+
+                            <div class="service-detail">
+                                <div class="service-detail-inner">
+                                    <p>
+                                        Cuidado com as unhas das mãos,
+                                        cutilagem e esmaltação com
+                                        acabamento delicado.
+                                    </p>
+
+                                    <button class="service-book"
+                                            data-book="Manicure">
+                                        Agendar este cuidado
+                                        <i data-lucide="arrow-up-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <article class="service-item"
+                                 data-service="Pedicure">
+
+                            <button class="service-trigger"
+                                    aria-expanded="false">
+                                <span class="service-index">02</span>
+                                <span class="service-name">Pedicure</span>
+                                <i data-lucide="plus"></i>
+                            </button>
+
+                            <div class="service-detail">
+                                <div class="service-detail-inner">
+                                    <p>
+                                        Atenção especial aos pés,
+                                        com cuidado e acabamento
+                                        para suas unhas.
+                                    </p>
+
+                                    <button class="service-book"
+                                            data-book="Pedicure">
+                                        Agendar este cuidado
+                                        <i data-lucide="arrow-up-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <article class="service-item"
+                                 data-service="Esmaltação em gel">
+
+                            <button class="service-trigger"
+                                    aria-expanded="false">
+                                <span class="service-index">03</span>
+                                <span class="service-name">Esmaltação em gel</span>
+                                <i data-lucide="plus"></i>
+                            </button>
+
+                            <div class="service-detail">
+                                <div class="service-detail-inner">
+                                    <p>
+                                        Esmaltação com acabamento
+                                        em gel para valorizar
+                                        o brilho e a beleza das unhas.
+                                    </p>
+
+                                    <button class="service-book"
+                                            data-book="Esmaltação em gel">
+                                        Agendar este cuidado
+                                        <i data-lucide="arrow-up-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <article class="service-item"
+                                 data-service="Blindagem">
+
+                            <button class="service-trigger"
+                                    aria-expanded="false">
+                                <span class="service-index">04</span>
+                                <span class="service-name">Blindagem</span>
+                                <i data-lucide="plus"></i>
+                            </button>
+
+                            <div class="service-detail">
+                                <div class="service-detail-inner">
+                                    <p>
+                                        Uma camada adicional de cuidado
+                                        para as unhas naturais.
+                                        Consulte a indicação do procedimento.
+                                    </p>
+
+                                    <button class="service-book"
+                                            data-book="Blindagem">
+                                        Agendar este cuidado
+                                        <i data-lucide="arrow-up-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <article class="service-item"
+                                 data-service="Plástica dos pés">
+
+                            <button class="service-trigger"
+                                    aria-expanded="false">
+                                <span class="service-index">05</span>
+                                <span class="service-name">Plástica dos pés</span>
+                                <i data-lucide="plus"></i>
+                            </button>
+
+                            <div class="service-detail">
+                                <div class="service-detail-inner">
+                                    <p>
+                                        Um momento dedicado ao cuidado
+                                        e à aparência dos seus pés.
+                                    </p>
+
+                                    <button class="service-book"
+                                            data-book="Plástica dos pés">
+                                        Agendar este cuidado
+                                        <i data-lucide="arrow-up-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <article class="service-item"
+                                 data-service="Cutilagem">
+
+                            <button class="service-trigger"
+                                    aria-expanded="false">
+                                <span class="service-index">06</span>
+                                <span class="service-name">Cutilagem</span>
+                                <i data-lucide="plus"></i>
+                            </button>
+
+                            <div class="service-detail">
+                                <div class="service-detail-inner">
+                                    <p>
+                                        Cuidado com as cutículas
+                                        e atenção aos detalhes
+                                        da finalização.
+                                    </p>
+
+                                    <button class="service-book"
+                                            data-book="Cutilagem">
+                                        Agendar este cuidado
+                                        <i data-lucide="arrow-up-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </article>
+
+                        <p class="service-note">
+                            Valores e disponibilidade sob consulta.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- FRASE EDITORIAL -->
+
+        <section class="manifesto">
+
+            <div class="manifesto-inner reveal">
+
+                <span>UM MANIFESTO SOBRE BELEZA</span>
+
+                <blockquote>
+                    Não é apenas fazer unhas.
+                    É colocar <em>amor</em>
+                    em cada detalhe.
+                </blockquote>
+
+                <span class="manifesto-author">
+                    — VIVIANA ROSA
+                </span>
+
+            </div>
+
+            <span class="manifesto-decoration"
+                  aria-hidden="true">vr.</span>
+
+        </section>
+
+        <!-- GALERIA -->
+
+        <section class="gallery section-space container" id="galeria">
+
+            <div class="section-heading reveal">
+
+                <div>
+
+                    <span class="section-tag">
+                        03 — THE NAIL EDIT
+                    </span>
+
+                    <h2>
+                        Beleza em<br>
+                        <em>cada tom.</em>
+                    </h2>
+
+                </div>
+
+                <a href="https://www.instagram.com/vivianagarcia745/"
+                   target="_blank"
+                   rel="noopener"
+                   class="underlined-link">
+                    Explore nosso Instagram
+                    <i data-lucide="arrow-up-right"></i>
+                </a>
+
+            </div>
+
+            <div class="gallery-grid">
+
+                <button class="gallery-card gallery-large reveal"
+                        data-caption="Delicadeza em cada detalhe">
+
+                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=1200&q=85"
+                         alt="Inspiração de manicure"
+                         loading="lazy">
+
+                    <span class="gallery-overlay">
+                        <span>01 / THE CLASSICS</span>
+                        <strong>Delicadeza.</strong>
+                        <i data-lucide="maximize-2"></i>
+                    </span>
+
+                </button>
+
+                <button class="gallery-card reveal"
+                        data-caption="Elegância e personalidade">
+
+                    <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&w=900&q=85"
+                         alt="Inspiração de unhas esmaltadas"
+                         loading="lazy">
+
+                    <span class="gallery-overlay">
+                        <span>02 / THE DETAILS</span>
+                        <strong>Elegância.</strong>
+                        <i data-lucide="maximize-2"></i>
+                    </span>
+
+                </button>
+
+                <button class="gallery-card reveal"
+                        data-caption="Um toque de personalidade">
+
+                    <img src="https://images.unsplash.com/photo-1604902396830-aca29e19b067?auto=format&fit=crop&w=900&q=85"
+                         alt="Inspiração de beleza das unhas"
+                         loading="lazy">
+
+                    <span class="gallery-overlay">
+                        <span>03 / THE MOOD</span>
+                        <strong>Personalidade.</strong>
+                        <i data-lucide="maximize-2"></i>
+                    </span>
+
+                </button>
+
+            </div>
+
+            <p class="gallery-note">
+                Fotografias ilustrativas de inspiração.
+                Confira os trabalhos reais em nosso Instagram.
+            </p>
+
+        </section>
+
+        <!-- AVALIAÇÕES -->
+
+        <section class="testimonials section-space" id="avaliacoes">
+
+            <div class="container testimonials-layout">
+
+                <div class="testimonials-intro reveal">
+
+                    <span class="section-tag">
+                        04 — EXPERIÊNCIAS REAIS
+                    </span>
+
+                    <h2>
+                        Quem conhece,<br>
+                        <em>recomenda.</em>
+                    </h2>
+
+                    <div class="rating-number">5,0<span>/5</span></div>
+
+                    <div class="stars">★★★★★</div>
+
+                    <p>Com base em 9 avaliações informadas do Google.</p>
+
+                    <a class="underlined-link"
+                       href="https://www.google.com/maps/search/?api=1&query=Viviana+Rosa+Esmalteria+Jau+SP"
+                       target="_blank"
+                       rel="noopener">
+                        Ver no Google
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+
+                </div>
+
+                <div class="testimonial-slider reveal">
+
+                    <span class="quote-symbol">“</span>
+
+                    <div class="testimonial-content"
+                         id="testimonialContent"
+                         aria-live="polite">
+
+                        <blockquote id="reviewText">
+                            Capricho, pontualidade e profissionalismo..
+                        </blockquote>
+
+                        <span class="review-source">
+                            AVALIAÇÃO DO GOOGLE
+                        </span>
+
+                    </div>
+
+                    <div class="slider-controls">
+
+                        <span id="reviewCounter">01 / 02</span>
+
+                        <div>
+
+                            <button id="previousReview"
+                                    aria-label="Avaliação anterior">
+                                <i data-lucide="arrow-left"></i>
+                            </button>
+
+                            <button id="nextReview"
+                                    aria-label="Próxima avaliação">
+                                <i data-lucide="arrow-right"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- AGENDAMENTO -->
+
+        <section class="booking section-space" id="agendamento">
+
+            <div class="container booking-layout">
+
+                <div class="booking-content reveal">
+
+                    <span class="section-tag">
+                        05 — RESERVE SEU MOMENTO
+                    </span>
+
+                    <h2>
+                        Um tempo<br>
+                        <em>só seu.</em>
+                    </h2>
+
+                    <p>
+                        Escolha seu serviço, informe sua preferência
+                        de data e horário e envie sua solicitação
+                        diretamente pelo WhatsApp.
+                    </p>
+
+                    <div class="booking-info">
+
+                        <i data-lucide="message-circle"></i>
+
+                        <div>
+                            <span>ATENDIMENTO PELO WHATSAPP</span>
+                            <a href="tel:+5514996049750">
+                                (14) 99604-9750
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="booking-info">
+
+                        <i data-lucide="map-pin"></i>
+
+                        <div>
+                            <span>NOSSO ENDEREÇO</span>
+                            <p>Jardim Novo Horizonte, Jaú — SP</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <form class="booking-form reveal" id="bookingForm">
+
+                    <div class="form-heading">
+                        <h3>Agende sua visita.</h3>
+                        <p>Preencha os dados abaixo.</p>
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="clientName">Seu nome</label>
+
+                        <input type="text"
+                               id="clientName"
+                               name="clientName"
+                               placeholder="Como podemos chamar você?"
+                               autocomplete="given-name"
+                               required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="selectedService">
+                            Qual cuidado você deseja?
+                        </label>
+
+                        <select id="selectedService"
+                                name="selectedService"
+                                required>
+
+                            <option value="" disabled selected>
+                                Selecione um serviço
+                            </option>
+
+                            <option>Manicure</option>
+                            <option>Pedicure</option>
+                            <option>Esmaltação em gel</option>
+                            <option>Blindagem</option>
+                            <option>Plástica dos pés</option>
+                            <option>Cutilagem</option>
+                            <option>Mais de um serviço</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="bookingDate">
+                                Data de preferência
+                            </label>
+
+                            <input type="date"
+                                   id="bookingDate"
+                                   name="bookingDate"
+                                   required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="bookingTime">
+                                Horário de preferência
+                            </label>
+
+                            <input type="time"
+                                   id="bookingTime"
+                                   name="bookingTime"
+                                   required>
+
+                        </div>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="notes">
+                            Observações (opcional)
+                        </label>
+
+                        <textarea id="notes"
+                                  name="notes"
+                                  rows="3"
+                                  placeholder="Alguma preferência especial?"></textarea>
+
+                    </div>
+
+                    <button type="submit"
+                            class="button button-primary submit-button">
+
+                        Solicitar pelo WhatsApp
+                        <i data-lucide="arrow-up-right"></i>
+
+                    </button>
+
+                    <p class="form-note">
+                        O envio não confirma a reserva.
+                        Aguarde a confirmação da profissional.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <!-- PERGUNTAS FREQUENTES -->
+
+        <section class="faq section-space container">
+
+            <div class="faq-layout">
+
+                <div class="reveal">
+
+                    <span class="section-tag">
+                        ANTES DA SUA VISITA
+                    </span>
+
+                    <h2>
+                        Podemos<br>
+                        <em>ajudar?</em>
+                    </h2>
+
+                </div>
+
+                <div class="faq-list reveal">
+
+                    <details>
+                        <summary>
+                            Como faço para agendar?
+                            <i data-lucide="plus"></i>
+                        </summary>
+
+                        <p>
+                            Preencha o formulário de agendamento
+                            ou entre em contato diretamente pelo
+                            WhatsApp (14) 99604-9750.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            Quais são os valores dos serviços?
+                            <i data-lucide="plus"></i>
+                        </summary>
+
+                        <p>
+                            Consulte os valores diretamente com
+                            a profissional pelo WhatsApp.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            Qual é o horário de atendimento?
+                            <i data-lucide="plus"></i>
+                        </summary>
+
+                        <p>
+                            O horário de fechamento informado é
+                            às 18h. Consulte os dias de atendimento
+                            e horários disponíveis pelo WhatsApp.
+                        </p>
+                    </details>
+
+                    <details>
+                        <summary>
+                            Onde posso ver os trabalhos realizados?
+                            <i data-lucide="plus"></i>
+                        </summary>
+
+                        <p>
+                            Acompanhe as publicações no Instagram
+                            @vivianagarcia745.
+                        </p>
+                    </details>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- CONTATO E LOCALIZAÇÃO -->
+
+        <section class="contact" id="contato">
+
+            <div class="contact-map">
+
+                <iframe
+                    title="Localização da Viviana Rosa Esmalteria"
+                    src="https://maps.google.com/maps?q=Rua%20Eletricista%20Manuel%20Martins%20154%20Jau%20SP&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+            <div class="contact-content">
+
+                <span class="section-tag">
+                    VENHA NOS VISITAR
+                </span>
+
+                <h2>
+                    Nos vemos<br>
+                    <em>em breve.</em>
+                </h2>
+
+                <address>
+                    Rua Eletricista Manuel Martins, 154<br>
+                    Jardim Novo Horizonte<br>
+                    Jaú — SP, 17209-846
+                </address>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Rua+Eletricista+Manuel+Martins+154+Jau+SP"
+                   target="_blank"
+                   rel="noopener"
+                   class="button button-light">
+
+                    Traçar minha rota
+                    <i data-lucide="arrow-up-right"></i>
+
+                </a>
+
+                <div class="contact-social">
+
+                    <a href="https://www.instagram.com/vivianagarcia745/"
+                       target="_blank"
+                       rel="noopener">
+                        <i data-lucide="instagram"></i>
+                        Instagram
+                    </a>
+
+                    <a href="https://wa.me/5514996049750"
+                       target="_blank"
+                       rel="noopener">
+                        <i data-lucide="message-circle"></i>
+                        WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div>
+
+                    <a href="#inicio" class="brand">
+
+                        <span class="brand-name">
+                            viviana<span>rosa.</span>
+                        </span>
+
+                        <span class="brand-description">
+                            ESMALTERIA & CUIDADO
+                        </span>
+
+                    </a>
+
+                    <p>O cuidado está nos detalhes.</p>
+
+                </div>
+
+                <div class="footer-links">
+                    <a href="#sobre">O espaço</a>
+                    <a href="#servicos">Serviços</a>
+                    <a href="#galeria">Inspirações</a>
+                    <a href="#agendamento">Agendamento</a>
+                </div>
+
+                <a href="#inicio" class="back-top">
+                    Voltar ao topo
+                    <i data-lucide="arrow-up"></i>
+                </a>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <span>
+                    © <span id="year"></span>
+                    Viviana Rosa Esmalteria.
+                </span>
+
+                <span>Jaú, São Paulo — Brasil.</span>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- WHATSAPP FLUTUANTE -->
+
+    <a class="whatsapp-float"
+       href="https://wa.me/5514996049750?text=Ol%C3%A1%21%20Gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os."
+       target="_blank"
+       rel="noopener"
+       aria-label="Conversar pelo WhatsApp">
+
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12.04 2a9.84 9.84 0 0 0-8.51 14.78L2 22l5.36-1.41A9.95 9.95 0 1 0 12.04 2Zm0 18.13a8.13 8.13 0 0 1-4.14-1.14l-.3-.18-3.18.84.85-3.1-.2-.32a8.17 8.17 0 1 1 6.97 3.9Zm4.48-6.12c-.25-.12-1.45-.71-1.67-.8-.22-.08-.39-.12-.55.13-.17.24-.64.8-.78.96-.14.17-.29.18-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.22-1.45-1.37-1.7-.14-.24-.01-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.24.25-.41.08-.16.04-.3-.02-.43-.06-.12-.55-1.32-.75-1.81-.2-.48-.4-.41-.55-.42h-.47c-.16 0-.43.06-.65.3-.22.25-.85.84-.85 2.04 0 1.2.87 2.36.99 2.52.13.16 1.72 2.62 4.17 3.67.58.25 1.04.4 1.39.51.58.18 1.11.16 1.53.1.47-.07 1.45-.59 1.65-1.16.21-.57.21-1.06.15-1.16-.06-.1-.23-.16-.47-.29Z"/>
+        </svg>
+
+    </a>
+
+    <!-- GALERIA AMPLIADA -->
+
+    <dialog class="lightbox" id="lightbox">
+
+        <button class="lightbox-close"
+                id="lightboxClose"
+                aria-label="Fechar imagem">
+            <i data-lucide="x"></i>
+        </button>
+
+        <img id="lightboxImage" src="" alt="">
+
+        <p id="lightboxCaption"></p>
+
+    </dialog>
+
+</body>
+</html>
